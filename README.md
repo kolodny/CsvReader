@@ -8,4 +8,6 @@ Usage:
 
 `echo 'headers => ' . print_r($csv->getHeaders(), true);`
 
+`echo 'next row =>' . print_pre($csv->nextRow(CsvReader::FETCH_ASSOC));`
+
 `echo 'the "body" of the file =>' . print_pre($csv->allRows(CsvReader::FETCH_ASSOC));`
